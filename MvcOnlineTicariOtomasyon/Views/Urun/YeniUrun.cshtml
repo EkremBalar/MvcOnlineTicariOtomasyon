@@ -22,11 +22,10 @@
     @Html.LabelFor(x => x.SatisFiyat)
     @Html.TextBoxFor(x => x.SatisFiyat, new { @class = "form-control" })
     <br />
-    @Html.LabelFor(x => x.Marka)
-    @Html.TextBoxFor(x => x.Marka, new { @class = "form-control" })
-    <br />
+   
     @Html.LabelFor(x => x.Kategori)
-    @Html.TextBoxFor(x => x.Kategoriid, new { @class = "form-control" })
+    @Html.DropDownListFor(x => x.Kategoriid, (List<SelectListItem>)ViewBag.dgr1, new {@class ="form-control"})
+    @*@Html.TextBoxFor(x => x.Kategoriid, new { @class = "form-control" })*@
     <br />
     @Html.LabelFor(x => x.UrunGorsel)
     @Html.TextBoxFor(x => x.UrunGorsel, new { @class = "form-control" })
