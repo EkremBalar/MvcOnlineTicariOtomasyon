@@ -127,6 +127,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CariController.cs" />
+    <Compile Include="Controllers\DepartmanController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
     <Compile Include="Controllers\UrunController.cs" />
@@ -143,7 +145,7 @@
     <Compile Include="Models\Siniflar\Gider.cs" />
     <Compile Include="Models\Siniflar\Kategori.cs" />
     <Compile Include="Models\Siniflar\Personel.cs" />
-    <Compile Include="Models\Siniflar\SatısHareket.cs" />
+    <Compile Include="Models\Siniflar\SatisHareket.cs" />
     <Compile Include="Models\Siniflar\Urun.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -273,6 +275,13 @@
     <Content Include="Views\Urun\Index.cshtml" />
     <Content Include="Views\Urun\YeniUrun.cshtml" />
     <Content Include="Views\Urun\UrunGetir.cshtml" />
+    <Content Include="Views\Departman\Index.cshtml" />
+    <Content Include="Views\Departman\DepartmanEkle.cshtml" />
+    <Content Include="Views\Departman\DepartmanGetir.cshtml" />
+    <Content Include="Views\Departman\DepartmanDetay.cshtml" />
+    <Content Include="Views\Departman\DepartmanPersonelSatis.cshtml" />
+    <Content Include="Views\Cari\Index.cshtml" />
+    <Content Include="Views\Cari\YeniCari.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

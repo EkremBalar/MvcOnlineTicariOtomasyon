@@ -7,7 +7,7 @@
 <h2>Kategori Güncelleme</h2>
 <br />
 @using (Html.BeginForm("KategoriGuncelle", "Kategori", FormMethod.Post))
-{
+ {
     <div class="form-group">
         @Html.LabelFor(x => x.KategoriAdı)
         @Html.TextBoxFor(x => x.KategoriAdı, new { @class = "form-control" })
@@ -15,4 +15,4 @@
     </div>
     <button class="btn btn-warning">Güncelle</button>
 
-}
+ }
