@@ -13,7 +13,7 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
         [Key]
         public int KategoriId { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "En fazla 50 karakter Girebilirsiniz!")]
         public string KategoriAdı { get; set; }
         public ICollection<Urun> Uruns { get; set; }
     }

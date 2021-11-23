@@ -1,9 +1,8 @@
 ﻿@model MvcOnlineTicariOtomasyon.Models.Siniflar.Cariler
-@{
+@{ 
     ViewBag.Title = "YeniCari";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
-
 
 <br />
 <h2>Yeni Cari Sayfası</h2>
@@ -20,6 +19,6 @@
     <br />
     @Html.LabelFor(x => x.CariMail)
     @Html.TextAreaFor(x => x.CariMail, new { @class = "form-control" })
-    
-    <button class="btn btn-success">Kaydet</button>
-</form>
+    <br />
+   
+    <button class="btn btn-info">Kaydet</button>

@@ -14,7 +14,7 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
         public int DepartmanId { get; set; }
 
         [Column(TypeName = "Varchar")]
-        [StringLength(30)]
+        [StringLength(30, ErrorMessage = "En fazla 30 karakter Girebilirsiniz!")]
         public string DepartmanAdı { get; set; }
         public bool Durum { get; set; }
 

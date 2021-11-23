@@ -13,13 +13,13 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
         [Key]
         public int AdminId { get; set; }
         [Column(TypeName= "Varchar")]
-        [StringLength(10)]
+        [StringLength(10, ErrorMessage = "En fazla 10 karakter Girebilirsiniz!")]
         public string KullanıcıAd { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(30)]
+        [StringLength(30, ErrorMessage = "En fazla 30 karakter Girebilirsiniz!")]
         public string Sifre { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(10)]
+        [StringLength(10, ErrorMessage = "En fazla 10 karakter Girebilirsiniz!")]
         public string Yetki { get; set; }
     }
 }

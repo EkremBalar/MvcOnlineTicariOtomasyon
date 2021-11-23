@@ -12,7 +12,7 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
         [Key]
         public int GiderId { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(100)]
+        [StringLength(100, ErrorMessage = "En fazla 100 karakter Girebilirsiniz!")]
         public string Acıklama { get; set; }
         public DateTime Tarih { get; set; }
         public decimal  Tutar { get; set; }

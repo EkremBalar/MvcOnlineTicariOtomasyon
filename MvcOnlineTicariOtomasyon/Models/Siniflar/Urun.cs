@@ -12,10 +12,10 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
         [Key]
         public int UrunId { get; set; }
         [Column(TypeName ="Varchar" )]
-        [StringLength(30)]
+        [StringLength(30, ErrorMessage = "En fazla 30 karakter Girebilirsiniz!")]
         public string UrunAd { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(30)]
+        [StringLength(30, ErrorMessage = "En fazla 30 karakter Girebilirsiniz!")]
         public string Marka { get; set; }
 
         public short Stok { get; set; }
@@ -23,7 +23,7 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
         public decimal SatisFiyat { get; set; }
         public bool Durum { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(230)]
+        [StringLength(230, ErrorMessage = "En fazla 230 karakter Girebilirsiniz!")]
         public string UrunGorsel { get; set; }
         public int Kategoriid { get; set; } 
         public virtual Kategori Kategori { get; set; }

@@ -12,23 +12,23 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
         public int FaturaId { get; set; }
 
         [Column(TypeName = "Varchar")]
-        [StringLength(1)]
+        [StringLength(1, ErrorMessage = "En fazla 1 karakter Girebilirsiniz!")]
         public string FaturaSeriNo { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(6)]
+        [StringLength(6, ErrorMessage = "En fazla 6 karakter Girebilirsiniz!")]
         public string FaturaSıraNo { get; set; }
         public DateTime Tarih { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "En fazla 50 karakter Girebilirsiniz!")]
         public string VergiDairesi { get; set; }
         public DateTime  Saat { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "En fazla 50 karakter Girebilirsiniz!")]
 
 
         public string TeslimEden    { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "En fazla 50 karakter Girebilirsiniz!")]
         public string TeslimAlan { get; set; }
         public ICollection<FaturaKalem> FaturaKalems { get; set; }
 

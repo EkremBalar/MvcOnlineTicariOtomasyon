@@ -12,7 +12,7 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
         [Key]
         public int FaturaKalemId    { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(130)]
+        [StringLength(130, ErrorMessage = "En fazla 130 karakter Girebilirsiniz!")]
         public string Acıklama { get; set; }
         public int Miktar { get; set; }
         public decimal BirimFiyat { get; set; }
