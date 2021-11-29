@@ -143,6 +143,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Siniflar\SinifGrup2.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
     <Compile Include="Models\Siniflar\Cariler.cs" />
     <Compile Include="Models\Siniflar\Class1.cs" />
@@ -155,6 +156,8 @@
     <Compile Include="Models\Siniflar\Kategori.cs" />
     <Compile Include="Models\Siniflar\Personel.cs" />
     <Compile Include="Models\Siniflar\SatisHareket.cs" />
+    <Compile Include="Models\Siniflar\SinifGrup.cs" />
+    <Compile Include="Models\Siniflar\SinifGrup3.cs" />
     <Compile Include="Models\Siniflar\Urun.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -205,7 +208,6 @@
     <Content Include="AdminLTE-3.0.4\dist\img\credit\paypal2.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\credit\visa.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\default-150x150.png" />
-    <Content Include="AdminLTE-3.0.4\dist\img\hata.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\icons.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\jean1.jpg" />
     <Content Include="AdminLTE-3.0.4\dist\img\jean2.jpg" />
@@ -2676,6 +2678,11 @@
     <Content Include="Views\Fatura\YeniKalem.cshtml" />
     <Content Include="Views\İstatistik\Index.cshtml" />
     <Content Include="Views\UrunDetay\Index.cshtml" />
+    <Content Include="Views\İstatistik\KolayTablolar.cshtml" />
+    <Content Include="Views\İstatistik\Partial1.cshtml" />
+    <Content Include="Views\İstatistik\Partial2.cshtml" />
+    <Content Include="Views\İstatistik\Partial3.cshtml" />
+    <Content Include="Views\İstatistik\Partial4.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
