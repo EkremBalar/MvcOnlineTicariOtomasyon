@@ -59,7 +59,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <h1>ASP.Net MVC5 kullanarak</h1>
                     <h2>Web Projesi Hazırlama</h2>
                     <p>
-                       Yetki durumunuza göre giriş yapacağınız menüyü seçiniz.
+                        Yetki durumunuza göre giriş yapacağınız menüyü seçiniz.
                     </p>
                     <div class="content3">
                         <ul>
@@ -71,7 +71,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             <div class="register-right">
                 <div class="register-in">
-                    
+
                     <a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog2">Kayıt Ol »</a>
                 </div>
                 <div class="register-in middle">
@@ -99,7 +99,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="fa fa-lock"></span>
                     <div class="clear"></div>
                     <div class="login-agileits-top">
-                        @using(Html.BeginForm("CariLogin1","Login", FormMethod.Post)) {
+                        @using (Html.BeginForm("CariLogin1", "Login", FormMethod.Post))
+                        {
 
                             <input type="text" class="name" name="CariMail" Placeholder="Mail Adresiniz" required="" />
                             <input type="password" class="password" name="CariSifre" Placeholder="Şifreniz" required="" />
@@ -124,11 +125,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <h3>Personel Giriş Sayfası</h3>
                     <div class="clear"></div>
                     <div class="login-agileits-top">
-                        <form action="#" method="post">
-                            <input type="text" class="name" name="KullaniciAd" Placeholder="Kullanıcı Adı" required="" />
+                        @using (Html.BeginForm("AdminLogin", "Login", FormMethod.Post))
+                        {
+                            <input type="text" class="name" name="KullanıcıAd" Placeholder="Kullanıcı Adı" required="" />
                             <input type="password" class="password" name="Sifre" Placeholder="Şifre" required="" />
                             <input type="submit" value="Giriş Yap">
-                        </form>
+                        }
                     </div>
                 </div>
             </div>
@@ -140,7 +142,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="pop-up">
         <div id="small-dialog2" class="mfp-hide book-form">
 
-            @Html.Action("Partial1","Login")
+            @Html.Action("Partial1", "Login")
 
         </div>
     </div>
