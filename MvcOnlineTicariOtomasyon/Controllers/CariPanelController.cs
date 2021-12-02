@@ -19,7 +19,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         {
 
             var mail = (string)Session["CariMail"];
-            var degerler = c.Carilers.FirstOrDefault(x => x.CariMail == mail);
+            var degerler = c.Carilers.Where(x => x.CariMail == mail).ToList();
 
             ViewBag.m = mail;
             return View(degerler);
